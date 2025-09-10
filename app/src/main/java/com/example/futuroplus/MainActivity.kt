@@ -24,5 +24,10 @@ class MainActivity : AppCompatActivity() {
             var intent = Intent(this,activity_cadastro::class.java)
             startActivity(intent)
         }
+        var buttonLogar = findViewById<Button>(R.id.button_logar)
+        buttonLogar.setOnClickListener {
+            var intent = Intent(this, activity_login::class.java)
+            startActivity(intent)
+        }
     }
 }
